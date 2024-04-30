@@ -9,6 +9,7 @@ public class Libro {
     private int anioPublicacion;
     private boolean leido ;
     private String genero;
+    
     //Este constructor tiene una complejidad constante, O(1).
     public Libro(String titulo,String autor,int anioPublicacion,String genero){
         this.titulo=titulo;
@@ -45,5 +46,24 @@ public class Libro {
             return true;
         }
         return false;
+    }
+    //La complejidad de este método es constante, O(1).
+    public String getTitulo(){
+        return this.titulo;
+    }
+    //La complejidad de este método es constante, O(1).
+    public String getAutor(){
+        return this.autor;
+    }
+    //La complejidad de este método es constante, O(1).
+    public String getGenero(){
+        return this.genero;
+    }
+        //La complejidad de este método es constante, O(1).
+    public boolean getNoLeido(){
+        if(this.leido==false){
+            return false;
+        }
+        return true;
     }
 }
